@@ -1,16 +1,21 @@
-console.log('HELLO')
+// console.log('HELLO')
 
-function add(a, b) {
-    return a + b;
-}
+// function add(a, b) {
+//     return a + b;
+// }
 
-console.log(add(2, 3))
+// console.log(add(2, 3))
 
-global.myName = "ROHAN"
+// global.myName = "ROHAN"
 
-function print() {
-    console.log(myName)
-}
-print();
+// function print() {
+//     console.log(myName)
+// }
+// print();
 
-setInterval(() => console.log("Printed after 2sec"), 2000)
+// setInterval(() => console.log("Printed after 2sec"), 2000)
+
+console.log(__filename)
+console.log(__dirname)
+
+// require("") 
