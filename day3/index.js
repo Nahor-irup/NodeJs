@@ -1,16 +1,10 @@
-console.log('HELLO')
+import http from "http";
 
-function add(a, b) {
-    return a + b;
-}
+const server = http.createServer((req, res) => {
+    res.writeHead(200);
+    res.end("Backend is running");
+});
 
-console.log(add(2, 3))
-
-global.myName = "ROHAN"
-
-function print() {
-    console.log(myName)
-}
-print();
-
-setInterval(() => console.log("Printed after 2sec"), 2000)
+server.listen(8000, () => {
+    console.log("Server is running");
+});
