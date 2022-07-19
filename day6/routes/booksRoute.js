@@ -8,7 +8,7 @@ router.use((req, res, next) => {
 });
 
 router.get("/", validateToken, (req, res) => {
-    res.status(200).send({ name: "Rohan" }); ``
+    res.status(200).send({ name: "Rohan" });
 });
 
 router.post("/add", (req, res) => {
