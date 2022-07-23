@@ -11,7 +11,7 @@ app.listen(8000, async () => {
     console.log("Server started");
     try {
         await connection.authenticate();
-        connection.sync();      //{ force: true }->to drop and create table again
+        connection.sync();      //{ force: true }->to drop and create table again  //{ alter: true } -> data wont delete 
         console.log("Connection established");
     } catch (error) {
         console.log("Connection can't be established", error);
